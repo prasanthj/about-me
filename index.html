@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Pig Latin Mode for CodeMirror 2 by prasanthj</title>
+    <title>Prasanth Jayachandran - Personal Website</title>
     
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pygment_trac.css">
+    <link rel="stylesheet" href="css/scroll-top.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -15,67 +18,107 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Pig Latin Mode for CodeMirror 2</h1>
-        <p>Syntax highlighting support for Pig Latin using CodeMirror 2 javascript library</p>
-        <p class="view"><a href="https://github.com/prasanthj/pig-codemirror-2">View the Project on GitHub <small>prasanthj/pig-codemirror-2</small></a></p>
-        <ul>
-          <li><a href="https://github.com/prasanthj/pig-codemirror-2/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/prasanthj/pig-codemirror-2/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/prasanthj/pig-codemirror-2">Fork On <strong>GitHub</strong></a></li>
-        </ul>
+        <h1>Prasanth Jayachandran</h1><hr>
+        <a href="#aboutme">About me</a><br/>
+        <a href="#interests">Interests</a><br/>
+      	<a href="#projects">Projects</a><br/>
+      	<a href="#reading">What am I reading?</a><br/>
+      	<a href="#resume">Resume</a><br/><br/>
+      	<a href="http://prasanthj86.blogspot.com" target="_blank"><img src="icons/blogger.png" /></a>
+      	<a href="http://www.linkedin.com/in/prasanthj" target="_blank"><img src="icons/linkedin.png" /></a>
+      	<a href="http://www.twitter.com/prasanth_j" target="_blank"><img src="icons/twitter.png" /></a>
+      	<a href="https://github.com/prasanthj" target="_blank"><img src="icons/github.png" /></a>
       </header>
+      
       <section>
-        <h1>Pig Latin Mode for CodeMirror 2</h1>
+		<div id="aboutme">
+			<h3  id="top">ABOUT ME</h3>
+			<p>I am pursuing Masters in Computer Science and Engineering at The Ohio State University, Columbus. 
+			Currently working as a Graduate Research Assistant (GRA) under <a href="http://www.arnab.org" target="_blank">Prof. Arnab Nandi</a> focussing on large scale data analytics and big data interaction research. I am also a Google Summer of Code <a href="http://code.google.com/soc/" target="_blank">GSoC 2012</a> student working on providing <a href="http://www.google-melange.com/gsoc/project/google/gsoc2012/pras_j/15001" target="_blank">CUBE operation support in Apache Pig</a>. 
+			During spring quarter, I worked for Advanced Computing Center for the Arts and Design (<a href="http://accad.osu.edu/" target="_blank">ACCAD</a>) as a GRA under <a href="http://accad.osu.edu/~aprice/" target="_blank">Prof. Alan Price</a> on real time data streaming using <a href="http://www.cs.unc.edu/Research/vrpn/" target="_blank">VRPN</a>. 
+			I also worked as a web application developer at <a href="https://github.com/osuogg" target="_blank">OSUOGG</a>. <p/>
+			Prior to that, I worked as a Software Engineer at Samsung India Software R&D Center for 3 years as a part of Game and Connectivity team. I completed Bachelor of Engineering (Hons) in Computer Science from Birla Institute of Technology and Science,Pilani,Goa. I also worked as an intern for 6 months in SAP Labs, Bangalore as a part of NetWeaver User Interface Foundation Team. </p>
+		</div>
 
-<h2>About</h2>
+		<div id="interests">
+			<h3>INTERESTS</h3>
+			<p>Large-scale distributed systems, Big data analysis, Data mining, Web application development</p>
+		</div>
 
-<p>CodeMirror 2 is a javascript library that provides a code editor in the browser.
-This project adds pig mode to codemirror2, provides syntax highlighting and autocompletion to Pig Latin language (used by Apache Pig). </p>
+		<div id="projects">
+			<h3>PROJECTS</h3>
+			<a href="https://issues.apache.org/jira/browse/PIG-2167" target="_blank">CUBE operator in Apache Pig</a>: Currently working on this Google Summer of Code project for providing OLAP cube operation support for Apache Pig. Click <a href="http://www.google-melange.com/gsoc/project/google/gsoc2012/pras_j/15001" target="_blank">here</a> to view my project proposal. Following are the links to Pig JIRA issues related to this project
+			<li><a href="https://issues.apache.org/jira/browse/PIG-2167" target="_blank">PIG-2167</a>: CUBE operation in Pig</li>
+			<li><a href="https://issues.apache.org/jira/browse/PIG-2710" target="_blank">PIG-2710</a>: Naive CUBE operator implementation</li>
+			<li><a href="https://issues.apache.org/jira/browse/PIG-2726" target="_blank">PIG-2726</a>: Handling legitimate NULL values</li>
+			<br/>
+			<a href="https://github.com/prasanthj/pig-codemirror-2" target="_blank">Pig Latin mode for CodeMirror</a>: In this project I implemented pig mode in <a href="http://codemirror.net/" target="_blank">CodeMirror</a>(online javascript based code editor) with support for syntax highlighting, autosuggestion and autocompletion for <a href="http://pig.apache.org/docs/r0.9.2/basic.html" target="_blank">Pig Latin</a> language (used by Apache Pig).<br/><br/>
+			<a href="https://github.com/prasanthj/ysmart-frjoin" target="_blank">Map-side fragment replicated join in YSmart</a>: As a part of large scale distributed systems course project, I implemented map-side fragment replicated join support for <a href="http://ysmart.cse.ohio-state.edu/" target="_blank">YSmart</a>. In this the smallest table in the join query is distributed to all mappers using hadoop's distributed cache and an in-memory map side join is performed thereby reducing the amount of intermediate data transfer in shuffle phase.<br/><br/>
+		</div>
 
-<h2>Features</h2>
+		<div id="reading">
+			<h3>READINGS</h3>
+			<h4>Research Papers</h4>
+			<h4>Books</h4>
+			<a href="http://www.amazon.com/Programming-Collective-Intelligence-Building-Applications/dp/0596529325/ref=sr_1_1?ie=UTF8&qid=1339142627&sr=8-1" target="_blank">Programming Collective Intelligence</a><br/>
+			<a href="http://www.amazon.com/Hadoop-Definitive-Guide-Tom-White/dp/1449311520/ref=sr_1_1?s=books&ie=UTF8&qid=1339197238&sr=1-1&keywords=hadoop+the+definitive+guide" target="_blank">Hadoop: The Definitive Guide</a><br/>
+			<a href="http://www.amazon.com/In-The-Plex-Google-Thinks/dp/1416596585/ref=sr_1_1?s=books&ie=UTF8&qid=1339197261&sr=1-1&keywords=in+the+plex" target="_blank">In the Plex: How Google Thinks, Works and Shapes our life.</a><br/><br/>
+		</div>
 
-<ul>
-<li>Syntax highlighting for pig latin (Checkout Online demo)</li>
-<li>AutoSuggest and AutoCompletion for pig keywords, builtin functions and data types (Online demo not available yet!! Checkout the code to play around.)</li>
-</ul><h2>Demo</h2>
+		<div id="resume">
+			<h3>RESUME</h3>
+		</div>
 
-<ul>
-<li>Online <a href="http://codemirror.net/mode/pig/index.html">http://codemirror.net/mode/pig/index.html</a>
-</li>
-<li>For offline demo checkout the project and launch the top level index.html file</li>
-</ul><h2>Issues</h2>
-
-<p>Please use github issues page for adding any issues <a href="https://github.com/prasanthj/pig-codemirror-2/issues">https://github.com/prasanthj/pig-codemirror-2/issues</a></p>
-
-<h2>Reference</h2>
-
-<ul>
-<li>CodeMirror 2 github site: <a href="https://github.com/marijnh/CodeMirror2">https://github.com/marijnh/CodeMirror2</a>
-</li>
-<li>CodeMirror website: <a href="http://codemirror.net/">http://codemirror.net/</a>
-</li>
-<li>Pig Latin language: <a href="http://wiki.apache.org/pig/PigLatin">http://wiki.apache.org/pig/PigLatin</a>
-</li>
-<li>Apache Pig: <a href="http://pig.apache.org/">http://pig.apache.org/</a>
-</li>
-</ul>
+		<p id="back-top">
+      		<a href="#top"><span></span>Top</a>
+      	</p>
       </section>
+
+      
       <footer>
-        <p>This project is maintained by <a href="https://github.com/prasanthj">prasanthj</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+       	<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist" target="_blank">orderedlist</a></small></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-23400095-4");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
 
+    <script src="js/scale.fix.js"></script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+     </script>
+     <script type="text/javascript">
+        try {
+        	var pageTracker = _gat._getTracker("UA-23400095-5");
+        	pageTracker._trackPageview();
+        } catch(err) {}
+    </script>
+
+
+	<script>
+	$(document).ready(function(){
+
+		// hide #back-top first
+		$("#back-top").hide();
+		
+		// fade in #back-top
+		$(function () {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('#back-top').fadeIn();
+				} else {
+					$('#back-top').fadeOut();
+				}
+			});
+
+			// scroll body to 0px on click
+			$('#back-top a').click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 800);
+				return false;
+			});
+		});
+
+	});
+	</script>
   </body>
 </html>
