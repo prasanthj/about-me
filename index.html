@@ -1,23 +1,61 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Prasanth Jayachandran - Personal Website</title>
-    
-   <!-- <link rel="stylesheet" href="css/styles.css">-->
-    <link rel="stylesheet" href="css/scroll-top.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-responsive.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="js/smooth-scroll.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400">
  
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    <style type="text/css">
+		#back-top {
+			position: relative;
+			bottom: 30px;
+			float: right;
+			margin-left:90%;
+		}
+
+		#back-top a {
+			width: 54px;
+			display: block;
+			text-align: center;
+			font: 11px/100% Arial, Helvetica, sans-serif;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: #bbb;
+
+			/* transition */
+			-webkit-transition: 1s;
+			-moz-transition: 1s;
+			transition: 1s;
+		}
+		#back-top a:hover {
+			color: #000;
+		}
+
+		/* arrow icon (span tag) */
+		#back-top span {
+			width: 54px;
+			height: 54px;
+			display: block;
+			margin-bottom: 7px;
+			background: #ddd url(icons/up-arrow.png) no-repeat center center;
+
+			/* rounded corners */
+			-webkit-border-radius: 15px;
+			-moz-border-radius: 15px;
+			border-radius: 15px;
+
+			/* transition */
+			-webkit-transition: 1s;
+			-moz-transition: 1s;
+			transition: 1s;
+		}
+		#back-top a:hover span {
+			background-color: #777;
+		}
+    </style>
   </head>
   <body>
   	<div class="container-fluid">
@@ -88,7 +126,7 @@
     <footer class="span12">
     	<p>&copy; 2012 Prasanth Jayachandran</p>
     </footer>
-    <script src="js/scale.fix.js"></script>
+   
     <script type="text/javascript">
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
