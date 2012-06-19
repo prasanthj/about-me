@@ -266,7 +266,6 @@ a:hover {
   color: #39c;
   text-decoration: none;
 }
-
 @media (max-width: 767px) {
    .sidebar-nav-fixed {
        width:auto;
