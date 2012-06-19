@@ -281,6 +281,11 @@ a:hover {
 }
 p {
   margin: 0 0 15px;
+  font-family:"Ubuntu", sans-serif;
+  color:#777;
+  font-weight:300;
+  font-size: 12px;
+  line-height: 18px;
 }
 p small {
   font-size: 11px;

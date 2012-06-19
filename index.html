@@ -73,6 +73,39 @@
 		      	<a href="http://www.twitter.com/prasanth_j" target="_blank"><img src="icons/twitter.png" /></a>
 		      	<a href="https://github.com/prasanthj" target="_blank"><img src="icons/github.png" /></a>
 		      	<hr>
+	      	
+		      	<div class="twitter-widget">
+					<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+					<script>
+					new TWTR.Widget({
+					  version: 2,
+					  type: 'faves',
+					  rpp: 10,
+					  interval: 30000,
+					  title: 'The best of Twitter according to ',
+					  subject: 'Prasanth_J',
+					  width: 250,
+					  height: 200,
+					  theme: {
+					    shell: {
+					      background: '#f0f0f0',
+					      color: '#8a8a8a'
+					    },
+					    tweets: {
+					      background: '#ffffff',
+					      color: '#737373',
+					      links: '#3399cc',
+					    }
+					  },
+					  features: {
+					    scrollbar: true,
+					    loop: false,
+					    live: true,
+					    behavior: 'all'
+					  }
+					}).render().setUser('prasanth_j').start();
+					</script>
+		      	</div>
 	      	</div>
 	      </div>
       
