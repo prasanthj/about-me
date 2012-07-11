@@ -283,11 +283,11 @@ p {
   font-family:"Ubuntu", sans-serif;
   color:#777;
   font-weight:300;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 18px;
 }
 p small {
-  font-size: 11px;
+  font-size: 12px;
   color: #999999;
 }
 .lead {
