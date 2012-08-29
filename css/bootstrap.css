@@ -39,7 +39,7 @@ body {
   margin: 0;
   font-family:"Ubuntu", sans-serif;
   color:#777;
-  font-weight:300;
+  font-weight:400;
   font-size: 13px;
   line-height: 18px;
   background-color: #ffffff;
@@ -258,7 +258,7 @@ a:hover {
 }
 .sidebar-nav-fixed a {
   font-family:"Ubuntu", sans-serif;
-  font-weight:300;
+  font-weight:350;
   font-size: 13px;
   color: #777;
 }
@@ -282,7 +282,7 @@ p {
   margin: 0 0 15px;
   font-family:"Ubuntu", sans-serif;
   color:#777;
-  font-weight:300;
+  font-weight:350;
   font-size: 13px;
   line-height: 18px;
 }
