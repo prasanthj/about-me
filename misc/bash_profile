@@ -1,0 +1,21 @@
+source ~/.git-completion.sh
+source ~/.git-prompt.sh
+
+#console colors
+export CLICOLOR=1
+export LSCOLORS=GaFxCxDxBxegedabagacad
+
+PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+
+export FINDBUGS_HOME="/usr/local/Cellar/findbugs/2.0.2/"
+export MAVEN_OPTS="-Xms256m -Xmx512m"
+export ANT_HOME="/usr/share/ant"
+export MAVEN_HOME="/usr/share/maven"
+export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home"
+
+function setenv_hadoop_1_1_2() {
+export HADOOP_HOME="/work/hadoop/1.1.2"
+export HIVE_HOME="/work/hive/trunk/hive-git"
+export PATH="$HIVE_HOME/build/dist/bin":"$HADOOP_HOME/bin":$PATH
+echo "Environment for hadoop-1.1.2 has been setup!"
+}
